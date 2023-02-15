@@ -1,9 +1,12 @@
 import React from "react";
 import AlbumCard from "./AlbumCard";
 import { albums } from "../data/albums";
+import GenrePicker from "./GenrePicker"
 
 function AlbumList() {
   return (
+    <div>
+      <GenrePicker/>
     <section className="albums">
       <AlbumCard
         name="Classic Tuna Cans Being Opened"
@@ -26,6 +29,7 @@ function AlbumList() {
         genre="Dogs"
       />
     </section>
+    </div>
   );
 }
 
